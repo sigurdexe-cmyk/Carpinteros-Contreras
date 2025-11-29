@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Carpinteros Contreras - Catalogo</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Estilos adicionales -->
+    <style>
+        /* NAV DE CATEGORÍAS */
+        .category-nav {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .category-nav a {
+            display: inline-block;
+            margin: 8px;
+            padding: 12px 18px;
+            background-color: #8b5a2b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .category-nav a:hover {
+            background-color: #704422;
+        }
+
+        /* Grid de catálogo */
+        .catalog-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        /* Botón flotante */
+        #btnTop {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #8b5a2b;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+            transition: 0.3s;
+            z-index: 999;
+        }
+        #btnTop:hover {
+            background-color: #704422;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav" 
+     style="background-color: var(--rustic-brown); box-shadow: 0 2px 6px rgba(0,0,0,0.4);">
+    <div class="container px-4 px-lg-5">
+
+        <!-- LOGO A LA IZQUIERDA -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html" 
+           style="font-family: 'DM Serif Text', serif; font-size: 1.7rem; gap: 10px;">
+            
+            <!-- Imagen del logo -->
+            <img src="marca.jpg" 
+                 alt="logo" 
+                 style="
+                    height: 55px;          /* Tamaño ajustado */
+                    width: auto;
+                    border-radius: 6px;     /* Bordes suaves */
+                    padding: 4px;           /* Deja visible el borde del color del nav */
+                    background-color: rgba(255,255,255,0.2); /* borde rústico suave*/
+                 ">
+
+            Carpinteros Contreras
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            Menú <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3" href="about.html">Catalogo</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3" href="post.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3" href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('assets/img/madera-bg.jpg'); filter: brightness(0.75); background-size: cover; background-position: center;">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading" style="text-shadow: 0 2px 5px rgba(0,0,0,0.6);">
+                        <h1 style="font-family: 'DM Serif Text', serif;">Nuestro catalogo</h1>
+                        <span class="subheading">Muebles hechos a mano </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación por categorías -->
+    <div class="category-nav">
+        <a href="#cocinas">Cocinas</a>
+        <a href="#closets">Closets</a>
+        <a href="#puertas">Puertas</a>
+        <a href="#muebles">Muebles</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="mb-4">
+        <div class="container px-4 px-lg-5">
+
+            <!-- =========================== -->
+            <!--         COCINAS             -->
+            <!-- =========================== -->
+<h2 id="cocinas">Cocinas</h2>
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c1.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c2.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c3.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c4.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c5.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c6.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c7.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c8.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c9.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c10.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c11.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c12.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c13.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c14.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c15.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c16.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c17.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c18.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c19.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c20.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="cocinas/c21.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+            <hr>
+
+            <!-- =========================== -->
+            <!--          CLOSETS            -->
+            <!-- =========================== -->
+            <h2 id="closets">Closets</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l1.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l2.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l3.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l4.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l5.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l6.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l7.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l8.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l19.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l10.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l11.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l12.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l13.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l14.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l15.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l16.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l17.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l18.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l19.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l20.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="closets/l21.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+            <!-- =========================== -->
+            <!--          PUERTAS            -->
+            <!-- =========================== -->
+             
+            <h2 id="puertas">Puertas</h2>
+             <div class="row">
+                <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p1.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p2.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p3.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p4.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p5.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p6.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p7.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p8.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p9.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p10.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p11.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p12.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p13.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p14.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p15.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p16.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p17.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p18.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p19.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p20.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+                    <div class="catalog-img-wrapper">
+                        <img class="catalog-img" src="puertas/p21.jpg" alt="Cocina">
+                        <img class="watermark" src="marca.jpg" alt="">
+                    </div>
+                </div>    <div class="col-md-4">
+            </div>
+
+            <hr>
+
+            <!-- =========================== -->
+            <!--          MUEBLES            -->
+            <!-- =========================== -->
+            <h2 id="muebles">Muebles</h2>
+            <div class="row">
+               <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m1.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m2.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m3.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m4.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m5.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m6.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m7.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m8.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m9.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m10.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m11.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m12.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m13.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m14.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m15.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m16.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m17.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m18.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m19.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m20.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="catalog-img-wrapper">
+            <img class="catalog-img" src="muebles/m21.jpg" alt="Cocina">
+            <img class="watermark" src="marca.jpg" alt="">
+        </div>
+    </div>         
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <p class="small text-center text-muted fst-italic">
+                        © Carpinteros Contreras — Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante -->
+    <button id="btnTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
